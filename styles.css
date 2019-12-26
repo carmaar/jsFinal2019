@@ -1,0 +1,77 @@
+/* Carly Pennock 11/24/2019 FINAL PROJECT */
+
+body {
+    background-image: linear-gradient(-90deg, rgb(213, 243, 166), rgb(118, 151, 243));
+    margin:0;
+    padding:0;
+}
+
+main {
+    font-size:1.5em;
+    flex-wrap:wrap;
+    max-width: 75%;
+    margin: auto;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding:5em;
+    margin-top:3em;
+}
+
+.left, h2 {
+    display:flex;
+    flex-direction: column;
+    font-family:'Space Mono';
+    color:white;
+    background-color:#0084ff;
+    border-radius:15px;
+    padding:1em;
+}
+
+.right {
+    margin:2em;
+    display:flex;
+    flex-direction: column;
+    font-family:'Space Mono';
+    color:black;
+    background-color:#F1F0F0;
+    border-radius:15px;
+    padding:1em;
+}
+
+/* FORM */
+
+#pickMovie {
+    flex-direction: column;
+    display:flex;
+}
+
+/* DROPDOWN */
+
+#mathTwo {
+    display:flex;
+    flex-direction: column;
+}
+
+#mathy {
+    width:25%!important;
+}
+
+/* MEDIA QUERIES */
+
+    /* TABLET */
+
+    @media only screen and (max-width: 64em) {
+
+        body {
+            max-width:100%;
+        }
+    }
+
+    /* MOBILE */
+
+    @media only screen and (max-width:37.5em) {
+
+        body {
+            font-size:.5em; 
+        }
+    }
+

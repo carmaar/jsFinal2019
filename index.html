@@ -1,0 +1,88 @@
+<!-- Carly Pennock 11/22/2019 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Final Project</title>
+
+    <!-- STYLES-->
+        <link rel="stylesheet" type="text/css" href="/styles.css">
+
+    <!-- FONTS -->
+        <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fugaz+One&display=swap" rel="stylesheet">
+
+ 
+
+
+</head>
+<body>
+
+    <main>
+        <div class="left" id="name"></div>
+        <h2>By entering your name, you have consented to letting us use this data for future studies. Thanks, human!
+        </h2>
+
+        <div class="left" id="math">What is 10 twice?</div>
+        <div class="right" id="mathA">Your answer:
+            <input type="number" id="inputAnswer" min="0" max="100">
+            <button type="submit" id="buttonAnswer">Enter</button>
+        </div>
+
+        <div class="left" id="movies">Which of the following have you seen?</div>        
+        <div class="right" id="moviesA">
+            <form id="pickMovie">
+                <span><input type="checkbox" class="movieChoice" ><label for="checkbox">Harry Potter</label></span>
+                <span><input type="checkbox" class="movieChoice" ><label for="checkbox">Lord of the Rings</label></span>
+                <span><input type="checkbox" class="movieChoice" ><label for="checkbox">Star Wars</label></span>
+                <span><input type="checkbox" class="movieChoice" ><label for="checkbox">Star Trek</label></span>
+            </form></div>
+
+        <div class="left">Can you perform some math for us?</div>
+
+        <div class="right" id="mathTwo">
+
+            <span><label for="number1">Number 1:</label><input type='number' id="number1" min="0" max="10"></span>
+            <span><label for="number2">Number 2:</label><input type='number' id="number2" min="0" max="10"></span>
+
+            <select id="mathy">
+                    <option value="add">add + </option>
+                    <option value="subtract">sub - </option>
+                    <option value="multiply">mult * </option>
+                    <option value="divide">div / </option>
+                    <option value="exponentation">exp ** </option>
+                    <option value="remainder">rem % </option>
+                </select>
+                    <br>
+                <button id="calcButton">Calculate!</button>
+                <p id="answer">Answer goes here.</p>
+            </div>
+
+        <div class="left">What is your favorite number?</div>
+
+            <div class="right">
+                    <span><label for="number">Enter number here:</label><input type='number' id="favNum" min="0" max="50"></span>
+                    <button type="submit" id="favNumSubmit">Enter</button>
+                </div>
+
+        <div class="left">Is it greater than or equal to 50 and less than or equal to 100?</div>
+
+        
+            <form class="right" id="favNumCheck">
+                <input type="radio" id="radio1"> Yes
+                <input type="radio" id="radio2"> No
+                <button type="submit" id="radioSubmit">Enter</button>
+            </form>
+
+
+    </main>
+
+    <!-- SCRIPTS -->
+
+    <script src="scripty.js"></script>
+
+</body>
+</html>
